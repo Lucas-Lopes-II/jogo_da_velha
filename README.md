@@ -1,3 +1,3 @@
 ﻿# Jogo da velha
- >Jogo da veha criado com HTML, CSS e JavaScript.
+ >Jogo da velha criado com HTML, CSS e JavaScript.
 <br/>
