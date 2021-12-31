@@ -10,7 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function handleClick(event) {
 
-    handleMove(event.target.id);
+    if(handleMove(event.target.id)){
+        setTimeout(() =>{
+            alert(`O jogo acabou, o vencedor foi o ${playerTime}`)
+        }, 10);
+    };
+
     updateSquares()  
 }
 
@@ -20,11 +25,10 @@ function updateSquares(){
 
     squares.forEach((square) => {
 
-        let position = square.id;
-        let symbol = board[position];
+        let symbol = board[square.id];
 
         if(symbol != ''){
-            square.innerHTML = `<div class='${symbol}'></div>`
+            square.innerHTML = `<div class='${symbol}'></div>`;
         }
     })
 
