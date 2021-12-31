@@ -1,3 +1,4 @@
+//depois de carregar a página execulta a função que acontecerá na interface
 document.addEventListener('DOMContentLoaded', () => {
 
     let squares = document.querySelectorAll('.square');
@@ -8,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 
-
+//Função que ao clicar no card execulta a jogada lança menssagem se houver vencedor
 function handleClick(event) {
 
     let position = event.target.id;
@@ -22,7 +23,7 @@ function handleClick(event) {
     updateSquare(position);
 }
 
-
+//Função que define e coloca o simbolo no card de acordo com o jogador da vez
 function updateSquare(position){
 
     let square = document.getElementById(position.toString());
@@ -30,7 +31,7 @@ function updateSquare(position){
     square.innerHTML = `<div class='${symbol}'></div>`;
 }
 
-
+//Função que reinicia o jogo quando botão recomeçar é clicado
 document.getElementById('btn').addEventListener('click', () => {
 
     board = ['', '', '', '', '', '', '', '', '',];
