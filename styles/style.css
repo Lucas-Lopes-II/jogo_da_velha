@@ -46,3 +46,24 @@ h1{
     left: 0;
     right: 0;
 }
+
+#btn {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(58, 58, 255);
+    padding: 2px;
+    margin: 20px;
+    border: none;
+    box-shadow: 0 0 0.7em rgb(87, 104, 255);
+}
+
+#btn:hover {
+    background-color: rgb(35, 35, 161);;
+}
+
+#btn:active {
+    box-shadow:none;
+}
