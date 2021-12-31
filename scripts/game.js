@@ -1,7 +1,12 @@
+//variáveis essenssiais para o game
 let board = ['', '', '', '', '', '', '', '', '',];
 let playerTime= 0;
 let gameOver = false;
+
+//simbolo identificador do jogador
 let symbols = ['o', 'x'];
+
+//combinações que representam vitória de um dos jogadores
 let winStates = [
     [0, 1, 2],
     [3, 4, 5],
@@ -13,7 +18,7 @@ let winStates = [
     [2, 4, 6]
 ];
 
-
+//Função que define se deu ou não game over e muda o jogador da vez
 function handleMove(position){
 
     if(gameOver){
@@ -34,7 +39,7 @@ function handleMove(position){
    
 }
 
-
+//Função que verifica se já tem um vencedor
 function isWin(){
 
     for( let i = 0; i < winStates.length; i++){
