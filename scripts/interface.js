@@ -10,26 +10,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function handleClick(event) {
 
-    if(handleMove(event.target.id)){
+    let position = event.target.id;
+
+    if(handleMove(position)){
         setTimeout(() =>{
             alert(`O jogo acabou, o vencedor foi o ${playerTime}`)
         }, 10);
     };
 
-    updateSquares()  
+    updateSquare(position);
 }
 
-function updateSquares(){
+function updateSquare(position){
 
-    let squares = document.querySelectorAll('.square');
-
-    squares.forEach((square) => {
-
-        let symbol = board[square.id];
-
-        if(symbol != ''){
-            square.innerHTML = `<div class='${symbol}'></div>`;
-        }
-    })
-
+    let square = document.getElementById(position.toString());
+    let symbol = board[position];
+    square.innerHTML = `<div class='${symbol}'></div>`;
 }
+
