@@ -15,8 +15,13 @@ function handleClick(event) {
     let position = event.target.id;
 
     if(handleMove(position)){
+        if(playerTime == 0){
+            playerTime = 'Escudo'
+        }else{
+            playerTime = 'Espadas'
+        }
         setTimeout(() =>{
-            alert(`O jogo acabou, o vencedor foi o ${playerTime}`)
+            alert(`O jogo acabou, ${playerTime} venceu`)
         }, 10);
     };
 
