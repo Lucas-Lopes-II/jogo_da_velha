@@ -5,7 +5,7 @@
 # Funcionalidades
 
 ### Messagem de fim de jogo
-![fim de jogo]()
+![fim de jogo](img/fim.gif)
 <br/>
 
 
