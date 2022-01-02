@@ -1,6 +1,7 @@
 ﻿# Jogo da velha
  >Jogo da velha criado com HTML, CSS e JavaScript.
  
+![fim de jogo](img/principal.gif)
 <br/><br/>
 
 # Funcionalidades
