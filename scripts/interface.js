@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let squares = document.querySelectorAll('.square');
 
     squares.forEach((square) => {
+
         square.addEventListener('click', handleClick);
+
     })
 
 })
@@ -15,14 +17,23 @@ function handleClick(event) {
     let position = event.target.id;
 
     if(handleMove(position)){
+
         if(playerTime == 0){
+
             playerTime = 'Escudo'
+
         }else{
+
             playerTime = 'Espadas'
-        }
+
+        };
+
         setTimeout(() =>{
+
             alert(`O jogo acabou, ${playerTime} venceu`)
+
         }, 10);
+
     };
 
     updateSquare(position);
@@ -46,8 +57,10 @@ document.getElementById('btn').addEventListener('click', () => {
     let squares = document.querySelectorAll('.square')
 
     for (let i = 0; i < squares.length; i++) {
-        squares[i].innerHTML = ''
-    }
+
+        squares[i].innerHTML = '';
+
+    };
    
 });
 
