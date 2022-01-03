@@ -22,34 +22,23 @@ let winStates = [
 function handleMove(position){
 
     if(gameOver){
-
         return;
-
     };
 
     if(board[position] == ''){
-
         board[position] = symbols[playerTime];
-
         gameOver = isWin();
-
         if(!gameOver){
-
             playerTime = (playerTime == 0) ? 1 : 0;
-
         };
-
     };
-
     return gameOver;
-   
 }
 
 //Função que verifica se já tem um vencedor
 function isWin(){
 
-    for( let i = 0; i < winStates.length; i++){
-        
+    for( let i = 0; i < winStates.length; i++){        
         let seq = winStates[i];
 
         let pos0 = seq[0];
@@ -57,13 +46,8 @@ function isWin(){
         let pos2 = seq[2];
 
         if(board[pos0] == board[pos1] && board[pos0] == board[pos2] && board[pos0] != ''){
-
             return true;
-            
         };
-
     };
-
     false;
-
 }
