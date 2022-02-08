@@ -8,11 +8,11 @@
 
 ### Messagem de fim de jogo
 ![fim de jogo](img/fim.gif)
-<br/>
+<br/><br/>
 
 ### Botão de recomeçar
 ![botão de recomeçar](img/recomecar.gif)
-<br/>
+<br/><br/>
 
 ----
 <br/><br/>
